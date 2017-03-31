@@ -27,6 +27,21 @@ const App = React.createClass({
   }
 });
 
+const Rou = React.createClass({
+
+  render() {
+    const login = window.localStorage.getItem('log');
+    const pass = window.localStorage.getItem('pass');
+    this.props.authorizatioin([this.log.value, this.pass.value]);
+    if (this.props.testStore[1] != 'test') {
+      window.location.href="index.html/login";
+    } else {
+      window.location.href="index.html/information";
+    }
+    return ();
+  }
+});
+
 export default connect(
     state => ({
         testStore: state
