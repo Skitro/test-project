@@ -4,11 +4,11 @@ import { connect } from 'react-redux'
 const Rou = React.createClass({
 
   render() {
-    const login = window.localStorage.getItem('log');
+    const login = window.localStorage.getItem('login');
     const pass = window.localStorage.getItem('pass');
-    this.props.authorizatioin([login, pass]);
+    // this.props.authorizatioin([login, pass]);
     console.log(login, pass);
-    if (this.props.testStore[1] != 'test') {
+    if (pass != 'test') {
       window.location.href="#/login";
     } else {
       window.location.href="#/information";
