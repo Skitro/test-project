@@ -38,7 +38,9 @@ const Rou = React.createClass({
     } else {
       window.location.href="index.html/information";
     }
-    return ();
+    return (
+      <p>Ок</p>
+    );
   }
 });
 
